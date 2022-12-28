@@ -1,8 +1,8 @@
+// looks good
 function twoDArray(arr) {
-    const total = arr.flat().reduce((acc,ini)=>{
-        return acc += ini;
-    },0);
-    return total;
+  // one comment when using reduce is that you are setting the accumulator each time so don't need += just +
+  const total = arr.flat().reduce((acc, ini) => acc + ini, 0);
+  return total;
 }
 
 module.exports = { twoDArray };
